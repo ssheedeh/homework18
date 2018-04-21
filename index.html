@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--Embed bootstrap-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- FontAwesome CSS for icons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Unit 17 Homework - HTML and CSS - Media quesries</title>
+</head>
+
+<body>
+  <div class="container clearfix">
+    <header>
+      <img src="george.png" alt="George, avatar">
+
+      <!-- We use <span> within other elements to target text we want to manipulate -->
+      <!-- Note how this text is all uppercase, take a a look at the CSS to see how it's done -->
+
+      <h1>Hi,
+        <br>my name is 
+        <span>George!</span>
+      </h1>
+    </header>
+
+    <!-- This <div> holds the left side content -->
+
+    <div class="col-md-6">
+
+      <!-- Each content section is a <section> -->
+      <section>
+
+        <!-- Note the // added in front of each <h2>, take a a look at the CSS to see how it's done -->
+
+        <h2>About Me</h2>
+        <p>My name is George and I am a digital marketing specialist.</p>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul id="educationList">
+
+          <!-- We use the clearfix hack to stop all our floats from causing chaos! -->
+
+          <li class="clearfix">
+            <div class="educationLeft">
+              <p class="year">2001</p>
+            </div>
+            <div class="educationRight">
+              <p>
+                <span class="school">University of Denver</span>
+                <br>
+                <span>Communication</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+     
+        <h2>Experience</h2>
+       <ul id="experienceList">
+          
+            <div class="col-md-6">
+                <div class="experienceLeft2">
+                    <p>
+                      <span class="where">Allied Business Schools</span>
+                      <br>
+                      <span class="year">2012 - 2018</span>
+                    </p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="experienceLeft2">
+                      <p>
+                        <span class="where">Bank Of America</span>
+                        <br>
+                        <span class="year">2009 - 2012</span>
+                      </p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="experienceLeft2">
+                      <p>
+                        <span class="where">Google</span>
+                        <br>
+                        <span class="year">2005 - 2009</span>
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="experienceLeft2">
+                        <p>
+                          <span class="where">University Of Denver</span>
+                          <br>
+                          <span class="year">2002 - 2005</span>
+                        </p>
+                      </div>
+            </div>
+            <div class="col-md-6">
+                <div class="experienceRight2">
+                    <p>
+                      <span class="profession">SEO Specialist</span>
+                      <br>
+                      <span class="description">Branding, Organic Trfaffic Conversions.</span>
+                    </p>
+                  </div>
+                  <div class="experienceRight2">
+                      <p>
+                        <span class="profession">Branding Specialist</span>
+                        <br>
+                        <span class="description">Working on Google Adwords, Analytics, Organic Search</span>
+                      </p>
+                    </div>
+                    <div class="experienceRight2">
+                        <p>
+                          <span class="profession">IT</span>
+                          <br>
+                          <span class="description">Fixing computer bugs</span>
+                        </p>
+                      </div>
+                      <div class="experienceRight2">
+                          <p>
+                            <span class="profession">IT</span>
+                            <br>
+                            <span class="description">Working on library's computers</span>
+                          </p>
+                        </div>
+            </div>
+
+
+</ul>
+
+
+       
+      
+    </div>
+
+    <!-- This <div> holds the right side content -->
+
+    <div class="col-md-6">
+      <section>
+        <h2>Contact</h2>
+        <ul id="contactList">
+
+          <!-- Checkout those awesome icons from FontAwesome -->
+
+          <li>
+            <a href="tel:8189493476">
+              <i class="fas fa-phone"></i>
+              <span class="contactLink">(818) 949-3476</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:georgek@gmail.com.com">
+              <i class="far fa-envelope"></i>
+              <span class="contactLink">georgek@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/george.k">
+              <i class="fab fa-twitter"></i>
+              <span class="contactLink">george.k@twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul id="skillsList">
+          <li>SEO</li>
+          <li>Marketing</li>
+          <li>Branding</li>
+          <li>Organic Search</li>
+          <li>PPC</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Hobbies</h2>
+        <ul id="hobbiesList">
+          <li>Ice Hocky</li>
+          <li>Traveling</li>
+          <li>Fishinf</li>
+          <li>Drinking</li>
+        </ul>
+      </section>
+      <section>
+        <h2>About Me</h2>
+        <ul id="factsList">
+          <li>I love my girlfriend.</li>
+          <li>I have an awesome dog called cooper.</li>
+        </ul>
+      </section>
+    </div>
+
+     <!-- NEW GRID DOWN HERE MEOW -->
+
+  </div>
+</body>
+
+</html>
